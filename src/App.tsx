@@ -6,7 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Technology from './components/Technology';
 import Team from './components/Team';
-import Contact from './components/Contact';
+import Contact from './components/ContactForm';
 import ThankYou from './pages/ThankYou';
 
 // Service Pages
@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
   // Update active section based on scroll position
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'technology', 'team', 'contact'];
+      const sections = ['hero', 'about', 'services', 'technology', 'team', 'contactForm'];
       const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -60,7 +60,7 @@ const HomePage: React.FC = () => {
       <Services />
       <Technology />
       <Team />
-      <Contact />
+      <ContactForm />
     </>
   );
 };
