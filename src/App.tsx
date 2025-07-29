@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
+
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
@@ -18,6 +18,8 @@ import UIUXDesign from './pages/services/UIUXDesign';
 import AIAgentSolutions from './pages/services/AIAgentSolutions';
 import AIImplementation from './pages/services/AIImplementation';
 import DigitalMarketing from './pages/services/DigitalMarketing';
+
+import Layout from './Layout';
 
 const HomePage: React.FC = () => {
   const [activeSection, setActiveSection] = useState('hero');
@@ -51,7 +53,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <Navigation activeSection={activeSection} onNavigate={handleNavigate} />
+      {/* Removed Navigation from here */}
       <Hero />
       <About />
       <Services />
@@ -67,16 +69,86 @@ function App() {
     <Router>
       <div className="min-h-screen">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/services/web-development" element={<WebDevelopment />} />
-          <Route path="/services/mobile-apps" element={<MobileApps />} />
-          <Route path="/services/cloud-solutions" element={<CloudSolutions />} />
-          <Route path="/services/data-analytics" element={<DataAnalytics />} />
-          <Route path="/services/cybersecurity" element={<Cybersecurity />} />
-          <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
-          <Route path="/services/ai-agent-solutions" element={<AIAgentSolutions />} />
-          <Route path="/services/ai-implementation" element={<AIImplementation />} />
-          <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/web-development"
+            element={
+              <Layout>
+                <WebDevelopment />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/mobile-apps"
+            element={
+              <Layout>
+                <MobileApps />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/cloud-solutions"
+            element={
+              <Layout>
+                <CloudSolutions />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/data-analytics"
+            element={
+              <Layout>
+                <DataAnalytics />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/cybersecurity"
+            element={
+              <Layout>
+                <Cybersecurity />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/ui-ux-design"
+            element={
+              <Layout>
+                <UIUXDesign />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/ai-agent-solutions"
+            element={
+              <Layout>
+                <AIAgentSolutions />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/ai-implementation"
+            element={
+              <Layout>
+                <AIImplementation />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/digital-marketing"
+            element={
+              <Layout>
+                <DigitalMarketing />
+              </Layout>
+            }
+          />
         </Routes>
       </div>
     </Router>
