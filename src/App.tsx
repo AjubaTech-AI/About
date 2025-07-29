@@ -6,7 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Technology from './components/Technology';
 import Team from './components/Team';
-import Contact from './components/ContactForm';
+import ContactForm from './components/ContactForm'; // <-- use ContactForm here
 import ThankYou from './pages/ThankYou';
 
 // Service Pages
@@ -25,7 +25,7 @@ import Layout from './Layout';
 const HomePage: React.FC = () => {
   const [activeSection, setActiveSection] = useState('hero');
 
-  // Handle smooth scrolling to sections
+  // Smooth scroll navigation handler
   const handleNavigate = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -33,10 +33,11 @@ const HomePage: React.FC = () => {
     }
   };
 
-  // Update active section based on scroll position
+  // Scroll listener to update active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'technology', 'team', 'contactForm'];
+      const sections = ['hero', 'about', 'services', 'technology', 'team', 'contact']; 
+      // Make sure this matches your Contact section's id attribute
       const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -54,13 +55,16 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      {/* Navigation removed here, expected in Layout */}
+      {/* Navigation is expected to be in Layout */}
       <Hero />
       <About />
       <Services />
       <Technology />
       <Team />
-      <ContactForm />
+      {/* Wrap ContactForm in a section with matching id for scrolling */}
+      <section id="contact">
+        <ContactForm />
+      </section>
     </>
   );
 };
