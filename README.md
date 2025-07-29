@@ -99,7 +99,7 @@ You’ll find a few beautifully crafted public pages, including:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/ajubatech/about-ajubatech.git
+git clone https://github.com/AjubaTech-AI/About.git
 cd about-ajubatech
 
 # 2. Install dependencies
@@ -111,7 +111,7 @@ Then visit http://localhost:3000
 
 💡 Let’s Connect
 Ready to explore how Ajuba Tech can help your business implement powerful AI tools, enhance efficiency, and elevate your brand?
-Visit ajubatech.com or contact us to learn more!
+Visit ajubatech.com.au or contact us to learn more!
 
 🤝 Contributing
 We love community contributions!
@@ -151,5 +151,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-AjubaTech • ajubatech.com
+AjubaTech • ajubatech.com.au
 Transforming business, empowering people.
