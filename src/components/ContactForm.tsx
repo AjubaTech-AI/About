@@ -3,9 +3,14 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
 
 const ContactForm: React.FC = () => {
-  // use your Formspree form ID here
-  const [state, handleSubmit] = useForm("xgvzyroq");
+  const [state, handleSubmit] = useForm("xgvzyroq"); // Replace with your Formspree form ID
   const navigate = useNavigate();
+
+  // Wrapper to log submission and call Formspree's handleSubmit
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    console.log("Form submission triggered");
+    handleSubmit(event);
+  };
 
   useEffect(() => {
     if (state.succeeded) {
@@ -25,10 +30,15 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4 p-6 bg-gray-50 rounded-md shadow-md">
+    <form
+      onSubmit={onSubmit}
+      className="max-w-lg mx-auto space-y-4 p-6 bg-gray-50 rounded-md shadow-md"
+    >
       <h2 className="text-2xl font-bold mb-4">Send us a Message</h2>
 
-      <label htmlFor="fullName" className="block font-semibold">Full Name *</label>
+      <label htmlFor="fullName" className="block font-semibold">
+        Full Name *
+      </label>
       <input
         id="fullName"
         type="text"
@@ -39,7 +49,9 @@ const ContactForm: React.FC = () => {
       />
       <ValidationError prefix="Full Name" field="fullName" errors={state.errors} />
 
-      <label htmlFor="email" className="block font-semibold">Email Address *</label>
+      <label htmlFor="email" className="block font-semibold">
+        Email Address *
+      </label>
       <input
         id="email"
         type="email"
@@ -50,7 +62,9 @@ const ContactForm: React.FC = () => {
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label htmlFor="company" className="block font-semibold">Company</label>
+      <label htmlFor="company" className="block font-semibold">
+        Company
+      </label>
       <input
         id="company"
         type="text"
@@ -60,7 +74,9 @@ const ContactForm: React.FC = () => {
       />
       <ValidationError prefix="Company" field="company" errors={state.errors} />
 
-      <label htmlFor="message" className="block font-semibold">Message *</label>
+      <label htmlFor="message" className="block font-semibold">
+        Message *
+      </label>
       <textarea
         id="message"
         name="message"
