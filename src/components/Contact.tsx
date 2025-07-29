@@ -26,20 +26,14 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'hello@ajubatech.com',
+      details: 'info@ajubatech.com',
       subtitle: 'We respond within 24 hours'
     },
-    {
-      icon: Phone,
-      title: 'Call Us',
-      details: '+1 (555) 123-4567',
-      subtitle: 'Mon-Fri 9AM-6PM EST'
-    },
-    {
+       {
       icon: MapPin,
       title: 'Visit Us',
-      details: '123 Tech Street, Silicon Valley',
-      subtitle: 'San Francisco, CA 94105'
+      details: '822 Manukau Road, ',
+      subtitle: 'Royal Oak, Auckland, New Zealand'
     }
   ];
 
