@@ -3,7 +3,8 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
 
 const ContactForm: React.FC = () => {
-  const [state, handleSubmit] = useForm("xgvzyroq"); // Your Formspree form ID
+  // use your Formspree form ID here
+  const [state, handleSubmit] = useForm("xgvzyroq");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,61 +25,50 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-lg mx-auto space-y-4 p-6 bg-gray-50 rounded-md shadow-md"
-    >
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4 p-6 bg-gray-50 rounded-md shadow-md">
       <h2 className="text-2xl font-bold mb-4">Send us a Message</h2>
 
-      <label htmlFor="fullName" className="block font-semibold">
-        Full Name *
-      </label>
+      <label htmlFor="fullName" className="block font-semibold">Full Name *</label>
       <input
         id="fullName"
         type="text"
         name="fullName"
         required
-        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         disabled={state.submitting}
+        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <ValidationError prefix="Full Name" field="fullName" errors={state.errors} />
 
-      <label htmlFor="email" className="block font-semibold">
-        Email Address *
-      </label>
+      <label htmlFor="email" className="block font-semibold">Email Address *</label>
       <input
         id="email"
         type="email"
         name="email"
         required
-        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         disabled={state.submitting}
+        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label htmlFor="company" className="block font-semibold">
-        Company
-      </label>
+      <label htmlFor="company" className="block font-semibold">Company</label>
       <input
         id="company"
         type="text"
         name="company"
-        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         disabled={state.submitting}
+        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <ValidationError prefix="Company" field="company" errors={state.errors} />
 
-      <label htmlFor="message" className="block font-semibold">
-        Message *
-      </label>
+      <label htmlFor="message" className="block font-semibold">Message *</label>
       <textarea
         id="message"
         name="message"
         rows={5}
         required
-        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
         disabled={state.submitting}
-      ></textarea>
+        className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+      />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
 
       <button
