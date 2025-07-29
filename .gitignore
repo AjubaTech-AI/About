@@ -1,0 +1,26 @@
+# Dependency directories
+node_modules/
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.production
+.env.development
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Vercel & Netlify
+.vercel/
+.netlify/
+
+# IDE/editor settings
+.vscode/
+.idea/
