@@ -6,7 +6,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Technology from "./components/Technology";
 import Team from "./components/Team";
-import Contact from "./pages/Contact"; // <-- updated to Contact page, not ContactForm
+import ContactForm from "./components/ContactForm";  // <-- updated import here
 import ThankYou from "./pages/ThankYou";
 
 // Service Pages
@@ -60,7 +60,7 @@ const HomePage: React.FC = () => {
       <Team />
       <section id="contact">
         {/* Use ContactForm directly on homepage for scroll */}
-        <Contact.ContactForm />
+        <ContactForm />
       </section>
     </>
   );
@@ -83,7 +83,7 @@ function App() {
             path="/contact"
             element={
               <Layout>
-                <Contact />
+                <ContactForm />  {/* Or create a dedicated Contact page if you want */}
               </Layout>
             }
           />
