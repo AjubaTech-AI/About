@@ -38,11 +38,9 @@ const Contact: React.FC = () => {
   ];
 
   const offices = [
-    { city: 'San Francisco', country: 'USA', timezone: 'PST' },
-    { city: 'London', country: 'UK', timezone: 'GMT' },
-    { city: 'Tokyo', country: 'Japan', timezone: 'JST' },
-    { city: 'Sydney', country: 'Australia', timezone: 'AEST' }
-  ];
+    { city: 'Sydney', country: 'Australia', timezone: 'AEST' },
+    { city: 'Auckland', country: 'New Zealand', timezone: 'GMT' },
+    ];
 
   return (
     <section id="contact" className="py-20 bg-white">
