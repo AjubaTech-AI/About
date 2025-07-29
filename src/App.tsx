@@ -7,6 +7,21 @@ import Services from './components/Services';
 import Technology from './components/Technology';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import ThankYou from "./pages/ThankYou";
+
+// import Error from "./pages/Error"; // optional
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* your other routes */}
+        <Route path="/thank-you" element={<ThankYou />} />
+        {/* <Route path="/error" element={<Error />} /> */}
+      </Routes>
+    </Router>
+  );
+}
 
 // Service Pages
 import WebDevelopment from './pages/services/WebDevelopment';
