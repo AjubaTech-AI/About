@@ -1,133 +1,231 @@
-<div align="center">
+# 🚀 Ajuba Tech - Next-Generation AI-Powered Digital Platform
 
-# 🌐 About AjubaTech
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-Backend-green.svg)](https://supabase.com/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC.svg)](https://tailwindcss.com/)
+[![Deployment](https://img.shields.io/badge/Status-Production-brightgreen.svg)](https://ajubatech.com)
 
-<img src="https://ogizmo.com/wp-content/uploads/2025/07/AjubaTech.png" alt="AjubaTech Banner" width="100%" />
-
-### 🚀 Your Partner in Digital Transformation
-*Empowering businesses to thrive in the digital age with next-gen technology, AI, and creativity*
-
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)](https://github.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)](https://github.com)
-[![Powered by Ajuba Tech](https://img.shields.io/badge/Powered%20by-Ajuba%20Tech-purple?style=for-the-badge)](https://ajubatech.com)
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
-
-</div>
+Welcome to the official repository for **[Ajuba Tech](https://ajubatech.com)** – an enterprise-grade, AI-powered digital transformation platform that empowers businesses to build their future with cutting-edge technology solutions.
 
 ---
 
-## ✨ Why AjubaTech?
+## 🔒 **Access Policy**
 
-💼 **Business-First Thinking** – Every solution is crafted for real business value  
-🚀 **Agile & Innovative** – Fast, flexible, and future-ready development  
-🤖 **AI-Enabled Solutions** – AI-driven automation, analytics, and customer support  
-🌍 **Digital Marketing** – Next-level growth for your online presence  
-🖥️ **Clean, Responsive Design** – Modern, mobile-first React UI  
-⚡ **Lightning Fast** – Optimized, no-backend, static Vercel deployment  
-🔓 **MIT Licensed** – 100% open, transparent, and easy to extend
+> **Important:** This repository contains proprietary code for Ajuba Tech's production platform. While the code is MIT-licensed, access to this private repository is restricted and granted only upon approval by Ajuba Tech management.
+> 
+> **To request access:** Email [info@ajubatech.com](mailto:info@ajubatech.com) with your use case and credentials.
 
 ---
 
-## 🏢 About AjubaTech
+## 🌟 **About Ajuba Tech**
 
-**Ajuba Tech** is a digital services and IT consulting company based in Auckland, New Zealand, founded in 2019.  
-We’re dedicated to helping businesses—especially small enterprises—thrive in the digital age by delivering timely, cost-effective, and functionally sound solutions.
+Ajuba Tech is a next-generation digital transformation company specializing in AI-enabled solutions, custom software development, automation, and cloud infrastructure. Our platform combines enterprise-level security with modern user experience, inspired by industry leaders like Sintra.ai.
 
----
-
-## 📚 What We Do
-
-- **Custom Software Development:** Bespoke applications tailored to your needs  
-- **Strategic IT Consulting:** Digital transformation and IT infrastructure optimization  
-- **Digital Marketing:** SEO, branding, and online presence  
-- **AI Enablement:** Innovative AI-powered platforms (AI chatbots, automation, analytics, and more)
+### 🎯 **Mission**
+Democratizing AI-powered business solutions while maintaining enterprise-grade security and scalability.
 
 ---
 
-## 🤝 Our Approach
+## ✨ **Core Features**
 
-At Ajuba Tech, we believe in flexibility and partnership.  
-Whether you need fully custom-built solutions with dedicated support or self-serve options for hosting, domains, and automation—**we fit to your business model**.
+### 🎨 **User Experience**
+- **🌓 Smart Theme System** - Adaptive day/night mode with user preference memory
+- **📱 Mobile-First Design** - Responsive across all devices with PWA capabilities
+- **⚡ Lightning Performance** - Optimized with Vite, lazy loading, and CDN delivery
+- **🔍 Global Search** - Intelligent search across all platform content
 
----
+### 🤖 **AI-Powered Intelligence**
+- **💬 AJ AI Assistant** - OpenAI-powered conversational AI for customer support
+- **📊 Lead Intelligence** - AI-driven lead scoring and qualification
+- **📝 Content Generation** - Automated blog posts, emails, and documentation
+- **🎯 Smart Recommendations** - Personalized user experience and suggestions
 
-## 📖 Explore This Repo
+### 🔐 **Authentication & Security**
+- **🚪 Unified Login System** - Role-based authentication with intelligent platform redirection
+- **👥 Multi-Tenant Architecture** - Secure company-based user management
+- **🛡️ Enterprise Security** - Row-level security, audit logging, and compliance
+- **🔑 SSO Integration** - Single sign-on across all Ajuba platforms
 
-This is a simple, open-source React app deployed on Vercel — **no backend or database**.  
-You’ll find a few beautifully crafted public pages, including:
+### 📰 **Content Management**
+- **✍️ Advanced Blog System** - Full-featured blog with reactions, comments, and sharing
+- **📚 Knowledge Base** - Searchable documentation and FAQ system
+- **📄 Dynamic Pages** - CMS-like content management for marketing pages
 
-- **Home:** Introduction to AjubaTech  
-- **Our Story:** Our journey & values  
-- **Our Team:** Meet our leaders  
-- **Contact:** Let’s connect
+### 💼 **Business Operations (CRM)**
+- **📋 Lead Management** - Comprehensive lead tracking and nurturing
+- **💰 Invoice Generator** - Professional invoice creation and management
+- **📊 Analytics Dashboard** - Real-time business metrics and reporting
+- **📞 Customer Communications** - Integrated email and notification system
+- **📈 Project Management** - Task tracking, team collaboration, and reporting
 
-> _Want to contribute? We welcome improvements and new ideas!_
-
----
-
-## 🎬 See It In Action
-
-<div align="center">
-
-### 🏠 Home Page
-*[Screenshot placeholder – Add your Home page screenshot here]*
-
-### 👥 Meet the Team
-*[Screenshot placeholder – Add your Team page screenshot here]*
-
-### 📱 Mobile Experience
-*[Mobile preview GIF or screenshot placeholder]*
-
-</div>
-
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-| Frontend | Styling | Deployment |
-|----------|---------|------------|
-| ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) |
-
-</div>
+### 🌐 **Integrated Platform Ecosystem**
+- **[AjubaX](https://ajubax.com.au)** - AI-powered website builder and design platform
+- **[Kauriflats](https://kauriflats.co.nz)** - Real estate marketplace and property management super app
+- **[Ajuba Domains](https://ajubadomain.co.nz)** - WHMCS-based hosting and domain management portal
 
 ---
 
-## 🚀 Quick Start
+## 🆕 **What's New**
+
+### **January 2025**
+- 🚀 **Enhanced AI Chat System** - Improved conversation flow and lead capture
+- 📱 **Mobile Dashboard** - Full mobile optimization for CRM features
+- 🔄 **Real-time Sync** - Live updates across all connected platforms
+- 🎨 **Design System v2** - Updated component library and brand consistency
+
+### **December 2024**
+- 🤖 **AJ AI Integration** - Launched OpenAI-powered customer assistant
+- 📊 **Advanced Analytics** - Enhanced reporting and business intelligence
+- 🔐 **Security Enhancements** - Implemented additional enterprise security measures
+
+---
+
+## 🛠️ **Technology Stack**
+
+### **Frontend Architecture**
+- **⚛️ React 18.2** - Modern component-based UI framework
+- **🎨 Tailwind CSS 3.4** - Utility-first CSS framework with custom design system
+- **🧩 ShadCN/UI** - Accessible component library
+- **⚡ Vite** - Next-generation build tool for optimal performance
+- **📱 Progressive Web App** - Service worker and offline capabilities
+
+### **Backend & Infrastructure**
+- **🗄️ Supabase** - PostgreSQL database with real-time capabilities
+- **🔧 Edge Functions** - Serverless API endpoints
+- **🔐 Row Level Security** - Database-level security policies
+- **📧 SMTP Integration** - Transactional email delivery
+- **☁️ Hostinger Hosting** - Production deployment infrastructure
+
+### **AI & Third-Party Services**
+- **🤖 OpenAI GPT-4** - Advanced AI conversation and content generation
+- **📊 Analytics** - Custom event tracking and user behavior analysis
+- **🔍 Search** - Full-text search with advanced filtering
+
+---
+
+## 🚀 **Quick Start**
+
+### **Prerequisites**
+- Node.js 18+ and npm/pnpm
+- Supabase account and project
+- OpenAI API key
+
+### **Installation**
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/AjubaTech-AI/About.git
-cd about-ajubatech
+# Clone the repository (requires access)
+git clone https://github.com/ajubatech/ajuba-tech-platform.git
+cd ajuba-tech-platform
 
-# 2. Install dependencies
+# Install dependencies
 npm install
 
-# 3. Start the dev server
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Start development server
 npm run dev
-Then visit http://localhost:3000
+```
 
-💡 Let’s Connect
-Ready to explore how Ajuba Tech can help your business implement powerful AI tools, enhance efficiency, and elevate your brand?
-Visit ajubatech.com.au or contact us to learn more!
+### **Environment Configuration**
 
-🤝 Contributing
-We love community contributions!
+Create a `.env` file with the following variables:
 
-Fork this repo
+```env
+# Supabase Configuration
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-Create a branch (feature/your-feature)
+# OpenAI Configuration
+VITE_OPENAI_API_KEY=your_openai_api_key
 
-Commit your changes
+# Email Configuration
+VITE_SMTP_EMAIL_USER=your_smtp_user
+VITE_SMTP_EMAIL_PASS=your_smtp_password
 
-Push and open a Pull Request
+# Optional: Analytics & Monitoring
+VITE_ANALYTICS_ID=your_analytics_id
+```
 
-📄 MIT License
-sql
-Copy
-Edit
+> ⚠️ **Security Notice:** Never commit secrets to version control. Use environment variables and keep your `.env` file in `.gitignore`.
+
+### **Available Scripts**
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+npm run type-check   # TypeScript type checking
+```
+
+---
+
+## 🤝 **How to Contribute**
+
+We welcome contributions from the community! Please follow these guidelines:
+
+### **Getting Started**
+1. **Request Access** - Email [info@ajubatech.com](mailto:info@ajubatech.com) for repository access
+2. **Fork & Clone** - Fork the repository and clone your fork
+3. **Branch Strategy** - Create feature branches from `main`
+4. **Development** - Follow our coding standards and conventions
+
+### **Contribution Process**
+1. **Issue First** - Create an issue for major changes or new features
+2. **Code Standards** - Follow ESLint rules and TypeScript best practices
+3. **Security Review** - Ensure no secrets or sensitive data in commits
+4. **Testing** - Test your changes thoroughly across devices and browsers
+5. **Pull Request** - Submit PR with clear description and screenshots
+6. **Review Process** - All contributions are reviewed and subject to approval
+
+### **Code Guidelines**
+- Use TypeScript for type safety
+- Follow React best practices and hooks patterns
+- Maintain responsive design principles
+- Include proper error handling
+- Write clear, self-documenting code
+- Add comments for complex business logic
+
+---
+
+## 📚 **Documentation**
+
+- **[API Documentation](docs/api.md)** - Backend API reference
+- **[Component Library](docs/components.md)** - UI component documentation
+- **[Deployment Guide](docs/deployment.md)** - Production deployment instructions
+- **[Security Guidelines](docs/security.md)** - Security best practices
+
+---
+
+## 🏗️ **Project Structure**
+
+```
+ajuba-tech-platform/
+├── src/
+│   ├── components/          # Reusable UI components
+│   ├── pages/              # Route components
+│   ├── hooks/              # Custom React hooks
+│   ├── contexts/           # React contexts
+│   ├── services/           # API and business logic
+│   ├── types/              # TypeScript type definitions
+│   └── utils/              # Utility functions
+├── supabase/
+│   ├── functions/          # Edge functions
+│   └── migrations/         # Database migrations
+├── public/                 # Static assets
+└── docs/                   # Documentation
+```
+
+---
+
+## 📄 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
 MIT License
 
 Copyright (c) 2025 Ajuba Tech
@@ -149,7 +247,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
+---
 
-AjubaTech • ajubatech.com.au
-Transforming business, empowering people.
+## 📞 **Contact & Support**
+
+### **Get in Touch**
+- 📧 **Email:** [info@ajubatech.com](mailto:info@ajubatech.com)
+- 🌍 **Website:** [https://ajubatech.com](https://ajubatech.com)
+- 💼 **LinkedIn:** [Follow Ajuba Tech](https://linkedin.com/company/ajubatech)
+- 💬 **Support:** Use our AI chat assistant on the website
+
+### **Business Inquiries**
+- 🚀 **Partnerships:** [partnerships@ajubatech.com](mailto:partnerships@ajubatech.com)
+- 💼 **Enterprise Sales:** [enterprise@ajubatech.com](mailto:enterprise@ajubatech.com)
+- 🎯 **Careers:** [careers@ajubatech.com](mailto:careers@ajubatech.com)
+
+---
+
+**© 2025 Ajuba Tech. All rights reserved.**
+
+*Empowering businesses with next-generation AI-powered digital solutions.*
