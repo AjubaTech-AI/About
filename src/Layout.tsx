@@ -1,14 +1,19 @@
-// src/Layout.tsx
 import React from "react";
 import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  // Scroll handler for in-page navigation
+  const onNavigate = (sectionId: string) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      <Navigation />
+      <Navigation activeSection="" onNavigate={onNavigate} />
       <main>{children}</main>
-      <Footer />
     </>
   );
 };
