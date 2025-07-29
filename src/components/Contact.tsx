@@ -1,126 +1,78 @@
 import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import ContactForm from "./ContactForm";
 
-const ContactForm: React.FC = () => {
-  const [state, handleSubmit] = useForm("xgvzyroq"); // Use your Formspree form ID
-
-  return (
-    <>
-      {state.succeeded ? (
-        <p className="text-green-600 font-semibold text-center mt-4">
-          Thanks for your message! We will get back to you shortly.
-        </p>
-      ) : (
-        <form
-          onSubmit={handleSubmit}
-          className="space-y-6"
-          noValidate
-        >
-          <div>
-            <label htmlFor="fullName" className="block font-semibold mb-1">
-              Full Name *
-            </label>
-            <input
-              id="fullName"
-              type="text"
-              name="fullName"
-              required
-              disabled={state.submitting}
-              className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <ValidationError prefix="Full Name" field="fullName" errors={state.errors} />
-          </div>
-
-          <div>
-            <label htmlFor="email" className="block font-semibold mb-1">
-              Email Address *
-            </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              required
-              disabled={state.submitting}
-              className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <ValidationError prefix="Email" field="email" errors={state.errors} />
-          </div>
-
-          <div>
-            <label htmlFor="company" className="block font-semibold mb-1">
-              Company
-            </label>
-            <input
-              id="company"
-              type="text"
-              name="company"
-              disabled={state.submitting}
-              className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <ValidationError prefix="Company" field="company" errors={state.errors} />
-          </div>
-
-          <div>
-            <label htmlFor="message" className="block font-semibold mb-1">
-              Message *
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={5}
-              required
-              disabled={state.submitting}
-              className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
-            />
-            <ValidationError prefix="Message" field="message" errors={state.errors} />
-          </div>
-
-          {/* Show error messages if any */}
-          {state.errors.length > 0 && (
-            <p className="text-red-600 font-semibold text-center">
-              Oops! Something went wrong. Please try again.
-            </p>
-          )}
-
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className="w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded hover:brightness-110 transition"
-          >
-            {state.submitting ? "Sending..." : "Send Message"}
-          </button>
-        </form>
-      )}
-    </>
-  );
-};
-
-const Contact: React.FC = () => {
-  return (
-    <div className="min-h-screen flex flex-col md:flex-row max-w-7xl mx-auto p-6 gap-8 bg-gray-50">
-      {/* Left side: Contact Info */}
-      <section className="md:w-1/3 bg-white rounded shadow p-6 flex flex-col space-y-6">
-        <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
-        <div>
-          <h3 className="font-semibold">Email</h3>
-          <p>
-            <a href="mailto:contact@ajubatech.com" className="text-blue-600 hover:underline">
-              contact@ajubatech.com
-            </a>
-          </p>
-        </div>
-        <div>
-          <h3 className="font-semibold">Address</h3>
-          <p>123 Ajuba Tech Street<br />Auckland, New Zealand</p>
-        </div>
-      </section>
-
-      {/* Right side: Contact Form */}
-      <section id="contact" className="md:w-2/3 bg-white rounded shadow p-6">
+const Contact: React.FC = () => (
+  <div className="pt-24 max-w-7xl mx-auto px-4">
+    <h1 className="text-5xl font-black text-center mb-2">
+      Get In <span className="text-blue-600">Touch</span>
+    </h1>
+    <p className="text-lg text-center mb-10 text-gray-700">
+      Ready to transform your ideas into reality? Let’s discuss your project and explore how
+      we can help you achieve your goals.
+    </p>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div>
         <ContactForm />
-      </section>
+      </div>
+      <div className="space-y-6">
+        <div className="bg-white rounded-xl shadow p-6">
+          <div className="flex items-center mb-2">
+            <svg width={26} height={26} fill="none" viewBox="0 0 24 24" className="mr-2 text-purple-600">
+              <path d="M20 4H4v16h16V4zm-2 2v2l-2 2h2v2h-2l2 2v2h-2l2 2v2h-2l2 2v2h-2l2 2v2H4v-2l2-2v-2H4v-2l2-2v-2H4v-2l2-2v-2H4v-2l2-2V4h2l2 2h2l2-2h2l2 2v2h-2z" fill="currentColor" />
+            </svg>
+            <div>
+              <div className="font-semibold">Email Us</div>
+              <a href="mailto:info@ajubatech.com" className="text-blue-700 hover:underline">
+                info@ajubatech.com
+              </a>
+              <div className="text-xs text-gray-500">We respond within 24 hours</div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white rounded-xl shadow p-6">
+          <div className="flex items-center mb-2">
+            <svg width={26} height={26} fill="none" viewBox="0 0 24 24" className="mr-2 text-purple-600">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 6.08 7 13 7 13s7-6.92 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z" fill="currentColor" />
+            </svg>
+            <div>
+              <div className="font-semibold">Visit Us</div>
+              <a href="https://goo.gl/maps/BjY76Ge3K68oLKoA7" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">
+                822 Manukau Road,
+              </a>
+              <div className="text-xs text-gray-500">
+                Royal Oak, Auckland, New Zealand
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-gray-900 rounded-xl shadow p-6 text-white">
+          <div className="font-semibold mb-2">Global Presence</div>
+          <div className="flex space-x-4">
+            <div className="bg-gray-800 rounded-lg p-4 flex-1 text-center">
+              <div className="text-lg font-bold">Sydney</div>
+              <div className="text-xs">Australia</div>
+              <div className="text-xs opacity-70">AEST</div>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-4 flex-1 text-center">
+              <div className="text-lg font-bold">Auckland</div>
+              <div className="text-xs">New Zealand</div>
+              <div className="text-xs opacity-70">GMT</div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-green-50 rounded-xl shadow p-6">
+          <div className="font-semibold mb-2">Why Work With Us?</div>
+          <ul className="list-disc ml-6 text-sm text-gray-700">
+            <li>Free initial consultation</li>
+            <li>Enterprise-grade solutions</li>
+            <li>Fast response time</li>
+            <li>Experienced team</li>
+            <li>Flexible engagement</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default Contact;
