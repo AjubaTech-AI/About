@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { Menu, X } from 'lucide-react';
 
 interface NavigationProps {
@@ -28,18 +28,23 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className={`text-2xl font-bold transition-colors duration-300 ${
-              scrolled ? 'text-gray-900' : 'text-white'
-            }`}>
-              AjubaTech
-            </h1>
+            <a href="/">
+              <img
+                src="/Logo.png"
+                alt="AjubaTech Logo"
+                className="h-10 w-auto transition-colors duration-300"
+                style={{ filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -49,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
                 <button
                   key={section.id}
                   onClick={() => onNavigate(section.id)}
-                  className={`px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 ${
+                  className={`cursor-pointer px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 ${
                     activeSection === section.id
                       ? scrolled
                         ? 'text-blue-600 border-b-2 border-blue-600'
@@ -69,9 +74,10 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md transition-colors duration-300 ${
+              className={`p-2 rounded-md transition-colors duration-300 cursor-pointer ${
                 scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-yellow-300'
               }`}
+              aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -89,7 +95,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
                     onNavigate(section.id);
                     setIsOpen(false);
                   }}
-                  className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-colors duration-300 ${
+                  className={`block w-full text-left cursor-pointer px-3 py-2 text-base font-medium rounded-md transition-colors duration-300 ${
                     activeSection === section.id
                       ? 'text-blue-600 bg-blue-50'
                       : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
